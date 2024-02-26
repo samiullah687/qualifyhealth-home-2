@@ -117,18 +117,22 @@ document.addEventListener('DOMContentLoaded', function () {
         // window.location.href = response === 'Yes' ? './yesPage.html' : './noPage.html';
 
         // Show an alert message
-        alert('Your response "' + response + '" has been saved!');
+        // alert('Your response "' + response + '" has been saved!');
     }
 
     if (yesButton) {
-        yesButton.addEventListener('click', function () {
+        yesButton.addEventListener('click', function (event) {
+            event.preventDefault();
             handleResponseClick('Yes');
+            window.location.href('q2.html');
         });
     }
 
     if (noButton) {
-        noButton.addEventListener('click', function () {
+        noButton.addEventListener('click', function (event) {
+            event.preventDefault();
             handleResponseClick('No');
+            window.location.href('q2.html');
         });
     }
 
