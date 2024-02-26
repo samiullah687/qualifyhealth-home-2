@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.markdown p {
+    padding-bottom: 1rem;
+}
+
+
+.primary-blue .primary-bg, .secondary-blue .secondary-bg {
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
+.duration-200 {
+    transition-duration: .2s;
+}
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+.rounded-r-md {
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+}
+.bottom-0 {
+    bottom: 0px;
+}
+.left-0 {
+    left: 0px;
+}
+.top-0 {
+    top: 0px;
+}
+.absolute {
+    position: absolute;
+}
+
+
+.button-red .button-bg-dark, .button-red .hover\:button-bg-dark:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.button-red .button-bg-light {
+    --tw-bg-opacity: 1;
+    background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.leading-5 {
+    line-height: 1.25rem;
+}
+.font-medium {
+    font-weight: 500;
+}
+.text-sm {
+    font-size: .875rem;
+}
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.border-transparent {
+    border-color: transparent;
+}
+.border {
+    border-width: 1px;
+}
+.rounded {
+    border-radius: 0.25rem;
+}
+.items-center {
+    align-items: center;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.inline-flex {
+    display: inline-flex;
+}
+.relative {
+    position: relative;
+}
+
+button, [role=button] {
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+#myModal {
+    display: none;
+    /* Other styling properties */
+}
+
+#termModal {
+    display: none;
+}
+
+#privacyModal {
+    display: none;
+}
+
+/* When input is focused, adjust label */
+.input:focus + .label, .input.has-content + .label {
+    transform: translate(12px, 8px) scale(0.8);
+    /* Additional styling for focus state */
+}
+  /* When input has content (class added by JavaScript), adjust label */
+.input.has-content + .label {
+    transform: translate(12px, 8px) scale(0.8);
+    /* Ensure the label stays in the transformed state */
+}

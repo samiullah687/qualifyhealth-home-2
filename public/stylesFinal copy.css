@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-default {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.custom-font-family {
+    font-family: 'Inter var', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.saas {
+    font-family: Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+
+#myModal {
+    display: none;
+    /* Other styling properties */
+}
+
+#termModal {
+    display: none;
+}
+
+#privacyModal {
+    display: none;
+}
+
+.animate-throb {
+    -webkit-animation: throb 1s ease-in-out infinite alternate;
+    animation: throb 1s ease-in-out infinite alternate;
+}
+
+@keyframes throb {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+.shadow-lg {
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+}
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* When input is focused, adjust label */
+.input:focus + .label, .input.has-content + .label {
+    transform: translate(12px, 8px) scale(0.8);
+    /* Additional styling for focus state */
+}
+  /* When input has content (class added by JavaScript), adjust label */
+.input.has-content + .label {
+    transform: translate(12px, 8px) scale(0.8);
+    /* Ensure the label stays in the transformed state */
+}
